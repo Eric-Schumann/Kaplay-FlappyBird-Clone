@@ -11,12 +11,12 @@ export default function Ground(x, y) {
     k.z(3),
     "ground",
     {
-      speed: 1.5,
+      speed: 175,
     },
   ]);
 
   ground.onUpdate(() => {
-    ground.moveBy(-ground.speed, 0);
+    ground.moveBy(-ground.speed * k.dt(), 0);
     if (ground.pos.x + ground.width <= 0) {
       ground.pos.x = 640;
     }
