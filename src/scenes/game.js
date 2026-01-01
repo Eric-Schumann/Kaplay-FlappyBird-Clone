@@ -8,7 +8,7 @@ import Bird from "../entities/Bird";
 
 export default function gameScene() {
   k.randSeed(Date.now());
-  let spawnInterval = 3;
+  let spawnInterval = 2;
   let score = 0;
 
   const scoreText = k.add([
@@ -26,7 +26,7 @@ export default function gameScene() {
   Ceiling();
 
   k.loop(spawnInterval, () => {
-    spawnPipes(k.width() + 20, k.rand(100, 425), "green");
+    spawnPipes(k.width() + 20, k.rand(50, 550), "green");
   });
 
   Ground(0, k.height() - 50);

@@ -22,7 +22,7 @@ export default function Bird(color) {
     },
   ]);
 
-  bird.jumpForce = 800;
+  bird.jumpForce = 500;
 
   const frames = [
     `${bird.bodyColor}bird-upflap`,

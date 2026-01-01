@@ -11,7 +11,7 @@ export default function Ground(x, y) {
     k.z(3),
     "ground",
     {
-      speed: 175,
+      speed: 200,
     },
   ]);
 

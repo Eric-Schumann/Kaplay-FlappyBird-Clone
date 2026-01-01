@@ -13,7 +13,7 @@ export default function Pipe(x, y, color) {
   ]);
 
   pipe.onUpdate(() => {
-    pipe.moveBy(-175 * k.dt(), 0);
+    pipe.moveBy(-200 * k.dt(), 0);
   });
   return pipe;
 }
